@@ -455,6 +455,7 @@ h3 .badge-e{
     font-weight: bold;
     margin: 0.2rem 0;
     font-family: "PT Serif Caption", serif;
+    transition: opacity 0.4s;
 }
 
 .article-text h3 {
@@ -490,7 +491,7 @@ h3 .badge-e{
 }
 
 .article-image img {
-    width: 90%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -611,7 +612,7 @@ h3 .badge-e{
 
 .mas-visto {
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: -5rem auto 2rem;
     padding: 0 1rem;
     font-family: "PT Serif Caption", serif;
 }
@@ -626,9 +627,9 @@ h3 .badge-e{
 
 .mas-visto_list {
     display: grid;
-    grid-template-rows: repeat(5, auto); /* 5 righe */
-    grid-template-columns: 1fr 1fr; /* 2 colonne */
-    grid-auto-flow: column; /* Riempie in verticale */
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
     list-style: none;
     padding-left: 0;
     margin: 0;
@@ -673,3 +674,538 @@ h3 .badge-e{
     cursor: pointer;
 }
 
+.ofertas {
+    font-family: "MarcinAnt", Arial, sans-serif;
+    max-width: 1200px;
+    margin: 7rem auto;
+    padding: 0 1rem;
+}
+
+.ofertas-navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.ofertas-navbar li {
+    margin-right: 2rem;
+    position: relative;
+}
+
+.ofertas-navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    padding: 0.5rem 0;
+    display: inline-block;
+}
+
+.ofertas-navbar .active a {
+    font-weight: bold;
+    color: black;
+}
+
+.ofertas-navbar .active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: teal; /* colore della riga sotto */
+}
+
+.cursos-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    gap: 0;
+    margin-top: 1.3rem;
+}
+
+.cursos-grid figure:hover{
+    cursor: pointer;
+}
+
+.cursos-banner,
+.cursos-big-column,
+.cursos-mini-column {
+    border-right: 1px solid #ddd;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cursos-grid > :last-child {
+    border-right: none;
+}
+
+.cursos-banner img,
+.cursos-big-column img,
+.cursos-mini-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cursos-big-column p,
+.cursos-mini-column p {
+    font-size: 0.9rem;
+    margin-top: -0.2rem;
+    flex-grow: 1;
+    transition: opacity 0.4s;
+}
+
+.cursos-big-column p:hover,
+.cursos-mini-column p:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.opinion-section {
+    max-width: 1200px;
+    margin: 2rem auto 4rem;
+    padding: 0 1rem;
+    font-family: "PT Serif Caption", serif;
+}
+
+.opinion-grid {
+    display: grid;
+    grid-template-columns: 1.2fr repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.opinion-editorial {
+    padding: 0 1rem 1rem;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+
+.editorial-label {
+    font-family: "MarcinAnt", Arial, sans-serif;
+    font-size: 0.75rem;;
+    text-transform: uppercase;
+    color: #666;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.opinion-editorial h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    transition: opacity 0.4s;
+}
+
+.opinion-editorial p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.opinion-column {
+    padding: 0 1rem 1rem 0;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.opinion-column:last-child {
+    border-right: none;
+}
+
+.opinion-column h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: opacity 0.4s;
+}
+
+.opinion-column p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.opinion-column cite {
+    font-size: 0.65rem;
+    color: #666;
+    font-style: normal;
+}
+.opinion-column > h3 .badge-e {
+    top: 0.170rem;
+}
+.opinion-column h3:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.opinion-editorial h3:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.section-deportes {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: "PT Serif Caption", serif;
+}
+.section-deportes figure{
+    margin: 0 0.5rem 0 0;
+    padding: 0 0.5rem 0 0;
+}
+
+.deportes-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.deportes-news {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-right: 1px solid #ddd;
+    padding-right: 3rem;
+}
+
+.deportes-featured {
+    display: flex;
+    gap: 1rem;
+}
+
+.featured-image{
+    flex: 1;
+}
+
+.featured-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.featured-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-caption {
+    font-family: "MarcinAnt", Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.featured-text h1 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: bold;
+}
+
+.featured-text cite{
+    font-family: "MarcinAnt", Arial, sans-serif;
+    font-size: 0.65rem;
+    color: #666;
+    margin: 0.5rem 0;
+    font-style: normal;
+}
+
+.featured-text p{
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0.5rem 0 1rem 0;
+}
+
+
+.deportes-small-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.small-article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    border-right: 2px solid #ddd;
+}
+.small-article:last-child {
+    border-right: none;
+}
+
+.small-article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.small-article h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+.small-article cite{
+    font-family: "MarcinAnt", Arial, sans-serif;
+    font-size: 0.65rem;
+    color: #666;
+    font-style: normal;
+}
+
+.deportes-advert figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.deportes-featured h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.2rem 0;
+    font-family: "PT Serif Caption", serif;
+    transition: opacity 0.4s;
+}
+.deportes-featured h3{
+    font-size: 0.865rem;
+    font-weight: bold;
+    transition: opacity 0.4s;
+    padding-top: 0.7rem;
+}
+.deportes-featured h3:hover,
+.deportes-featured h1:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.deportes-featured .mini-section-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 1rem;
+    margin: 0.6rem 0 1rem;
+}
+.deportes-featured .mini-section-title .title-line {
+    width: 25px;
+    height: 0.05rem;
+    background-color: #000;
+    flex-shrink: 0;
+    margin-top: 1.2rem;
+}
+.section-deportes figure:hover{
+    cursor: pointer;
+}
+.small-article h3:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.deportes-advert {
+    position: sticky;
+    top: 1rem;
+    align-self: start;
+}
+
+.section-link {
+    color: #000;
+    font-size: 0.655rem;
+    text-transform: uppercase;
+    float: right;
+    margin-bottom: 1rem;
+    transition: opacity 0.4s;
+    font-family: "MarcinAnt", Arial, sans-serif;
+}
+.section-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.section-cultura {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    font-family: "PT Serif Caption", serif;
+}
+
+.cultura-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: -3rem;
+}
+.cultura-column{
+    border-right: 1px solid #ccc;
+}
+.cultura-column:last-child {
+    border: none;
+}
+.cultura-main-column{
+    border-right: 1px solid #ccc;
+}
+.cultura-grid figure:hover{
+    cursor: pointer;
+}
+.cultura-grid figure{
+    margin: 0 1rem 0 0;
+    padding: 0 1rem 0 0;
+}
+
+.cultura-main-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cultura-main-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cultura-main-image figcaption {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 0.25rem;
+    text-align: right;
+}
+
+.cultura-main-text h1 {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin: 0.5rem 0 0;
+    transition: opacity 0.4s;
+}
+
+.cultura-main-text p{
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.cultura-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cultura-article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cultura-article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cultura-article h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.3rem 0 0;
+    transition: opacity 0.4s;
+}
+
+.cultura-article cite,
+.cultura-main-text cite {
+    font-family: "MarcinAnt", Arial, sans-serif;
+    font-size: 0.65rem;
+    color: #666;
+    font-style: normal;
+    transition: opacity 0.4s;
+}
+
+.cultura-main-text h1:hover,
+.cultura-article h3:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.cultura-article > h3 .badge-e {
+    top: 0.185rem;
+}
+.cultura-main-text > h1 .badge-e{
+    top: 0.6rem;
+}
+
+.mejorsemana-section{
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: "PT Serif Caption", serif;
+}
+
+.subscribe-button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: opacity 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.subscribe-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.mejorsemana-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.semana-article {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+}
+.semana-article:last-child {
+    border-right: none;
+}
+
+.semana-article figure {
+    margin: 0 0.7rem 0 0;
+    padding: 0 0.7rem 0 0;
+}
+.semana-article figure:hover{
+    cursor: pointer;
+}
+
+.semana-article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.semana-article-text {
+    margin-top: 0.8rem;
+}
+
+.semana-article-text h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    transition: opacity 0.4s;
+}
+.semana-article-text h3:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.semana-article-text cite {
+    font-size: 0.65rem;
+    color: #666;
+    font-style: normal;
+    font-family: "Marcin Ant", Arial, sans-serif;
+}
+
+.semana-article-text > h3 .badge-e {
+    top: 0.23rem;
+}
