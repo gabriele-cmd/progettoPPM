@@ -286,8 +286,8 @@ a:hover, .headline h2:hover, .headline h3:hover {
     display: none;
 }
 
-/* Mobile Layout sotto 500px */
-@media (max-width: 500px) {
+/* Mobile Layout */
+@media (max-width: 768px) {
     .top-bar .language-selector,
     .top-bar span:nth-child(5),
     .main-nav {
@@ -367,17 +367,6 @@ a:hover, .headline h2:hover, .headline h3:hover {
     }
 }
 
-/* Tablet Layout sotto 1000px */
-@media (max-width: 1000px) {
-    .main-nav ul {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-    }
-    .main-nav ul::-webkit-scrollbar {
-        display: none;
-    }
-}
 /*MAIN SECTION*/
 .content-grid {
     display: grid;
@@ -576,7 +565,8 @@ h3 .badge-e{
     margin-top: 0.5rem; /* posizione della linea rispetto al testo */
 }
 
-@media (max-width: 500px) {
+/* Mobile Layout */
+@media (max-width: 768px) {
     .content-grid {
         display: flex;
         flex-direction: column;
@@ -632,6 +622,51 @@ h3 .badge-e{
 
     .headline cite {
         font-size: 0.6rem;
+    }
+
+    .center-column > .headline:first-child{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center-column > .headline:first-child .en-directo{
+        order: 1;
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .center-column > .headline:first-child h2 {
+        order: 2;
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .center-column > .headline:first-child figure {
+        order: 3;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .center-column > .headline:first-child p {
+        order: 4;
+        font-size: 0.9rem;
+        color: #333;
+        margin: 0.5rem 0;
+    }
+
+    .center-column > .headline:first-child h3{
+        order: 5;
+        font-size: 0.865rem;
+        font-weight: bold;
+        margin: 0.5rem 0;
+        text-align: left;
+    }
+
+    .center-column > .headline:first-child cite {
+        display: none;
     }
 }
 
@@ -779,7 +814,8 @@ h3 .badge-e{
     text-align: right;
 }
 
-@media (max-width: 500px) {
+/* Mobile Layout */
+@media (max-width: 768px) {
     .article-wrapper {
         flex-direction: column;
     }
@@ -906,7 +942,8 @@ h3 .badge-e{
     top: 0.1rem;
 }
 
-@media (max-width: 500px) {
+/* Mobile Layout */
+@media (max-width: 768px) {
     .actualidad-content {
         display: flex;
         flex-direction: column;
@@ -941,6 +978,10 @@ h3 .badge-e{
         border-right: none;
         min-height: auto;
         padding: 0.5rem;
+    }
+
+    .mini-column h2{
+        font-size: 0.8rem;
     }
 
     .mini-column img {
@@ -1025,6 +1066,32 @@ h3 .badge-e{
     cursor: pointer;
 }
 
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .mas-visto_content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .mas-visto_list {
+        display: block;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .mas-visto_list li {
+        margin-bottom: 1.5rem;
+    }
+
+    .mas-visto_ad img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*OFERTAS SECTION*/
 .ofertas {
     font-family: "MarcinAnt", Arial, sans-serif;
     max-width: 1200px;
@@ -1114,7 +1181,107 @@ h3 .badge-e{
     cursor: pointer;
 }
 
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .ofertas-navbar {
+        display: none;
+    }
 
+    .cursos-grid::before {
+        content: "Recomendaciones EL PAÍS ▼";
+        display: block;
+        font-weight: bold;
+        font-size: 0.95rem;
+        color: black;
+        margin-bottom: 1.5rem;
+        font-family: "MarcinAnt", Arial, sans-serif;
+    }
+
+    .cursos-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .cursos-banner {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cursos-banner figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cursos-banner img {
+        content: url("https://picsum.photos/500/100");
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .cursos-big-column {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .cursos-big-column figure {
+        margin: 0;
+    }
+
+    .cursos-big-column img {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cursos-big-column p {
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 0.4rem;
+        padding-top: 0.4rem;
+        font-size: 0.95rem;
+    }
+
+    .cursos-mini-column {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cursos-mini-column figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cursos-mini-column img {
+        width: 150px;
+        height: 100px;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cursos-mini-column p {
+        margin: 0 0 0 0.2rem;
+        padding: 0 0 0 0.2rem;
+        font-size: 0.75rem;
+        flex: fit-content;
+        line-height: 1.2;
+    }
+
+    .cursos-banner,
+    .cursos-big-column,
+    .cursos-mini-column {
+        border: none;
+    }
+}
 
 /*OPINION SECTION*/
 .opinion-section {
@@ -1196,7 +1363,8 @@ h3 .badge-e{
     cursor: pointer;
 }
 
-@media (max-width: 500px) {
+/* Mobile Layout */
+@media (max-width: 768px) {
     .opinion-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1390,8 +1558,8 @@ h3 .badge-e{
     align-self: start;
 }
 
-/* RESPONSIVE PER MOBILE */
-@media (max-width: 500px) {
+/* Mobile Layout */
+@media (max-width: 768px) {
     .deportes-grid {
         grid-template-columns: 1fr;
     }
@@ -1402,6 +1570,10 @@ h3 .badge-e{
     .deportes-small-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+    }
+
+    .deportes-small-grid h3{
+        font-size: 0.8rem;
     }
 
     .deportes-news {
@@ -1560,6 +1732,55 @@ h3 .badge-e{
     top: 0.6rem;
 }
 
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .cultura-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .cultura-main-column {
+        order: 1;
+        border-right: none;
+    }
+
+    .cultura-column {
+        order: 2;
+        border-right: none;
+    }
+
+    .section-cultura h2 {
+        font-size: 1.3rem;
+    }
+
+    .section-link {
+        float: none;
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+    }
+
+    .cultura-main-text h1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .cultura-main-text p,
+    .cultura-main-text cite {
+        text-align: left;
+    }
+
+    .cultura-main-image figcaption {
+        text-align: right;
+    }
+
+    .cultura-article h3 {
+        font-size: 1.05rem;
+    }
+}
+
+/*MEJOR DE LA SEMANA SECTION*/
 .mejorsemana-section{
     max-width: 1200px;
     margin: 2rem auto;
@@ -1639,4 +1860,35 @@ h3 .badge-e{
 
 .semana-article-text > h3 .badge-e {
     top: 0.23rem;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .mejorsemana-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .semana-article {
+        border-right: none;
+        padding-right: 0.5rem;
+    }
+
+    .mejorsemana-grid > .semana-article:nth-child(1),
+    .mejorsemana-grid > .semana-article:nth-child(3) {
+        border-right: 1px solid #ddd;
+    }
+
+    .mejorsemana-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .semana-article h3{
+        font-size: 0.8rem;
+    }
+
+    .subscribe-button {
+        margin-top: -0.4rem;
+    }
 }
