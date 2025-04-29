@@ -11,24 +11,58 @@
 
 <body>
 <div id="desc-topbar" class="top-bar">
-    <div>
-        <time datetime="2025-04-24">24 abr 2025</time> |
-        <span>Actualizado 16:37</span>
-    </div>
-    <div>
-        <span>CEST</span> |
+    <div class="top-left">
+        <time datetime="2025-04-28">28 abr 2025</time> |
+        <span>Actualizado 18:05</span>
+        <span class="timezone">CEST</span> |
+        <span>Seleccione:</span>
+
         <div class="language-selector">
-            <span>ESPAÑA ▼</span>
+            <button class="language-button">
+                <span>ESPAÑA</span>
+                <span class="language-arrow">▼</span>
+            </button>
             <ul class="dropdown">
-                <li><abbr title="América">AMÉRICA</abbr></li>
+                <li class="active">
+                    <span class="active-dot"></span>ESPAÑA
+                </li>
+                <li class="has-submenu">
+                    AMÉRICA
+                    <ul class="submenu">
+                        <li>México</li>
+                        <li>Colombia</li>
+                        <li>Chile</li>
+                        <li>Argentina</li>
+                    </ul>
+                </li>
+                <li>US ESPAÑOL</li>
+                <li>US ENGLISH</li>
             </ul>
         </div>
+
+    </div>
+    <div class="top-right">
+        <button class="subscribe-button-yellow">1 AÑO, 12 €</button>
+        <button class="login-button">
+            <span>INICIAR SESIÓN</span>
+            <span class="login-arrow">▼</span>
+        </button>
     </div>
 </div>
 
 <div id="desc-logo" class="logo-container">
-    <h1>EL PAÍS</h1>
-    <p>EL PERIÓDICO GLOBAL</p>
+    <div class="left-logo">
+        <div class="hamburger-menu">☰</div>
+        <figure class="logo-image">
+            <img src="https://picsum.photos/200/60" alt="Logo El País">
+        </figure>
+    </div>
+    <div class="right-icons">
+        <button class="subscribe-button-yellow">1 AÑO, 12 €</button>
+        <div class="profile-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Profile Icon">
+        </div>
+    </div>
 </div>
 
 <div id="desc-nav" class="main-nav">
@@ -51,6 +85,11 @@
             <li><a class="expres" href="#">EL PAÍS EXPRES</a></li>
         </ul>
     </nav>
+</div>
+<div id="mobile-second-bar" class="second-bar">
+    <time datetime="2025-04-28">28 abr 2025</time> |
+    <span>Actualizado 18:05</span>
+    <span class="timezone">CEST</span>
 </div>
 
 <div class="content-grid">
@@ -155,7 +194,6 @@
             <p>El pontífice argentino ha sido un líder carismático y un reformador audaz...</p>
         </div>
     </div>
-
 </div>
 
 <section class="section-copadelrey">
