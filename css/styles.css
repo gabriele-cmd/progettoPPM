@@ -63,7 +63,7 @@ a:hover, .headline h2:hover, .headline h3:hover {
 }
 
 .timezone {
-    text-decoration: underline dotted;
+    text-decoration: none;
 }
 
 .language-selector {
@@ -87,8 +87,8 @@ a:hover, .headline h2:hover, .headline h3:hover {
 }
 
 .language-arrow {
-    color: #009ff7;
-    font-size: 0.5rem;
+    color: #0036F7FF;
+    font-size: 0.8rem;
     margin-left: 4px;
 }
 
@@ -128,7 +128,7 @@ a:hover, .headline h2:hover, .headline h3:hover {
     display: inline-block;
     width: 6px;
     height: 6px;
-    background-color: #00b1eb; /* celeste */
+    background-color: #00b1eb;
     border-radius: 50%;
     margin-right: 6px;
     vertical-align: middle;
@@ -203,7 +203,7 @@ a:hover, .headline h2:hover, .headline h3:hover {
 }
 
 .login-arrow {
-    font-size: 0.4rem;
+    font-size: 0.7rem;
     color: #000;
 }
 .login-button:hover {
@@ -274,7 +274,7 @@ a:hover, .headline h2:hover, .headline h3:hover {
 }
 
 .main-nav .expres {
-    background-color: #009ff7;
+    background-color: #0036F7FF;
     font-weight: bold;
     color: #fff;
     padding: 0.3rem 0.6rem;
@@ -632,7 +632,7 @@ footer {
     color: #666;
 }
 .en-directo {
-    color: red;
+    color: #AF0000FF;
     font-weight: bold;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -682,11 +682,11 @@ h3 .badge-e{
 }
 
 .title-line {
-    width: 25px; /* lunghezza della linea */
+    width: 25px;
     height: 0.05rem;
     background-color: #000;
     flex-shrink: 0;
-    margin-top: 0.5rem; /* posizione della linea rispetto al testo */
+    margin-top: 0.5rem;
 }
 
 /* Mobile Layout */
@@ -795,44 +795,60 @@ h3 .badge-e{
 }
 /*Tablet Layout*/
 @media (min-width: 768px) and (max-width: 1023px) {
+
+    .content-grid {
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 1rem;
+        max-width: 100%;
+        padding: 1rem 0.5rem;
+    }
+
+    .left-column, .center-column, .right-column {
+        gap: 1rem;
+    }
+
+    .center-column {
+        padding: 0 0.5rem;
+    }
+
     .headline h2 {
         font-size: 0.9rem;
     }
 
     .headline h3 {
-        font-size: 0.55rem;
+        font-size: 0.5rem;
     }
 
     .headline p {
-        font-size: 0.6rem;
+        font-size: 0.55rem;
     }
 
     .headline cite {
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
 
     .center-column > .headline:first-child h2 {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 
     .center-column > .headline:first-child p {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 
     .center-subgrid .headline h2 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .center-subgrid .headline p {
-        font-size: 0.65rem;
+        font-size: 0.5rem;
     }
 
     .center-subgrid .headline cite {
-        font-size: 0.35rem;
+        font-size: 0.5rem;
     }
 
-    .headline figcaption{
-        font-size: 0.5rem;
+    .headline figcaption {
+        font-size: 0.45rem;
     }
 
     .en-directo {
@@ -840,16 +856,41 @@ h3 .badge-e{
     }
 
     .badge-e {
-        font-size: 0.5rem;
-        width: 0.7rem;
-        height: 0.7rem;
+        font-size: 0.6rem;
+        width: 0.75rem;
+        height: 0.75rem;
         top: 0.2rem;
     }
 
     .mini-section-title {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
+    }
+
+    .title-line {
+        width: 20px;
+    }
+
+    .left-column, .right-column {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .right-column img,
+    .right-column figure {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+        display: block;
+    }
+
+    .image-container {
+        padding-bottom: 0.5rem;
     }
 }
+
 
 /*COPA DEL REY SECTION*/
 .section-copadelrey {
@@ -934,7 +975,7 @@ h3 .badge-e{
 }
 
 .article-text .en-directo {
-    color: red;
+    color: #AF0000FF;
     font-weight: bold;
     font-family: "MarcinAnt", Arial, sans-serif;
     font-size: 0.75rem;
@@ -942,7 +983,7 @@ h3 .badge-e{
     text-transform: uppercase;
 }
 
-.article-text h1 {
+.article-text h2 {
     font-size: 2rem;
     font-weight: bold;
     margin: 0.2rem 0;
@@ -1006,7 +1047,7 @@ h3 .badge-e{
         text-align: left;
     }
 
-    .article-text h1 {
+    .article-text h2 {
         font-size: 1.5rem;
     }
 
@@ -1816,7 +1857,7 @@ h3 .badge-e{
     color: #666;
 }
 
-.featured-text h1 {
+.featured-text h2 {
     font-size: 2rem;
     margin: 0 0 0.5rem 0;
     font-weight: bold;
@@ -1961,7 +2002,7 @@ h3 .badge-e{
         margin-top: 2rem;
     }
 
-    .featured-text h1 {
+    .featured-text h2 {
         font-size: 1.5rem;
     }
 
@@ -1985,7 +2026,7 @@ h3 .badge-e{
         padding-right: 0;
     }
 
-    .deportes-featured h1 {
+    .deportes-featured h2 {
         font-size: 1.4rem;
     }
 
@@ -2036,7 +2077,7 @@ h3 .badge-e{
 /*CULTURA SECTION*/
 .section-link {
     color: #000;
-    font-size: 0.655rem;
+    font-size: 0.855rem;
     text-transform: uppercase;
     float: right;
     margin-bottom: 1rem;
@@ -2098,7 +2139,7 @@ h3 .badge-e{
     text-align: right;
 }
 
-.cultura-main-text h1 {
+.cultura-main-text h2 {
     font-size: 1.9rem;
     font-weight: bold;
     margin: 0.5rem 0 0;
@@ -2145,7 +2186,7 @@ h3 .badge-e{
     transition: opacity 0.4s;
 }
 
-.cultura-main-text h1:hover,
+.cultura-main-text h2:hover,
 .cultura-article h3:hover{
     opacity: 0.8;
     cursor: pointer;
@@ -2154,7 +2195,7 @@ h3 .badge-e{
 .cultura-article > h3 .badge-e {
     top: 0.185rem;
 }
-.cultura-main-text > h1 .badge-e{
+.cultura-main-text > h2 .badge-e{
     top: 0.6rem;
 }
 
@@ -2183,11 +2224,11 @@ h3 .badge-e{
 
     .section-link {
         float: none;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         margin-top: 0.5rem;
     }
 
-    .cultura-main-text h1 {
+    .cultura-main-text h2 {
         font-size: 1.5rem;
         text-align: left;
     }
@@ -2231,7 +2272,7 @@ h3 .badge-e{
         border-right: none;
     }
 
-    .cultura-main-text h1 {
+    .cultura-main-text h2 {
         font-size: 1.5rem;
     }
 
@@ -2432,7 +2473,7 @@ h3 .badge-e{
     padding-bottom: 1.1rem;
 }
 
-.video-overlay:hover{
+.video-card:hover{
     cursor: pointer;
 }
 
@@ -2536,6 +2577,9 @@ figure.newspaper-image {
     max-width: 90%;
     margin: 2rem auto 1rem auto;
 }
+figure.newspaper-image:hover {
+    cursor: pointer;
+}
 
 .left-links {
     display: flex;
@@ -2587,6 +2631,11 @@ figure.newspaper-image {
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 0.3rem;
+    transition: opacity 0.4s;
+}
+.newsletter-description h3:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .newsletter-description p {
@@ -2631,12 +2680,22 @@ figure.newspaper-image {
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    transition: opacity 0.4s;
+}
+.hemeroteca-left h3:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 figure.hemeroteca-image {
     width: 100%;
     margin: 0;
     padding-right: 1rem;
+    transition: opacity 0.4s;
+}
+figure.hemeroteca-image:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 ul.hemeroteca-list {
@@ -2651,6 +2710,11 @@ ul.hemeroteca-list li {
     color: black;
     position: relative;
     margin-bottom: 0.8rem;
+    transition: opacity 0.4s;
+}
+ul.hemeroteca-list li:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 ul.hemeroteca-list li::marker {
@@ -2670,6 +2734,11 @@ ul.hemeroteca-list li::marker {
 figure.app-logos {
     margin: 0;
     width: auto;
+    transition: opacity 0.4s;
+}
+figure.app-logos:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .subscribe-box {
@@ -2698,7 +2767,6 @@ figure.app-logos {
     cursor: pointer;
     transition: opacity 0.4s;
 }
-
 .subscribe-button-large:hover {
     opacity: 0.8;
 }
@@ -2715,6 +2783,9 @@ figure.app-logos {
 figure.logo-image {
     width: 120px;
     margin: 0;
+}
+figure.logo-image:hover{
+    cursor: pointer;
 }
 
 .extras {
@@ -2735,12 +2806,21 @@ figure.extra-image {
     width: 150px;
     margin: 0 0 3rem;
 }
+figure.extra-image:hover{
+    cursor: pointer;
+}
 
 .extra-item p {
     font-size: 0.9rem;
     font-weight: bold;
     margin-top: 0.2rem;
+    transition: opacity 0.4s;
 }
+.extra-item p:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 /* Mobile Layout */
 @media (max-width: 767px) {
     .end-section {
@@ -2802,12 +2882,12 @@ figure.extra-image {
         flex-wrap: wrap;
     }
 
-    .left-column,
-    .center-column {
+    .end-section .left-column,
+    .end-section .center-column {
         width: 50%;
     }
 
-    .right-column {
+    .end-section .right-column {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -2817,6 +2897,22 @@ figure.extra-image {
     .subscribe-box{
         width: 100%;
         text-align: center;
+    }
+
+    .thick-title-line.small-line {
+        background-color: black;
+        flex-grow: 1;
+        height: 3px;
+        margin-top: 0.1rem;
+        width: 7.5rem;
+    }
+
+    .thin-line.small-line {
+        width: 100%;
+        margin-top: -1rem;
+        margin-bottom: 0.5rem;
+        border: none;
+        border-top: 1px solid black;
     }
 
     .subscribe-box h3 {
