@@ -403,6 +403,7 @@ a:hover, .headline h2:hover, .headline h3:hover {
     .profile-icon img {
         width: 24px;
         height: 24px;
+        color: black;
     }
 
     .subscribe-button-yellow {
@@ -981,6 +982,7 @@ h3 .badge-e{
 .article-text cite {
     font-family: "MarcinAnt", Arial, sans-serif;
     font-size: 0.75rem;
+    font-style: normal;
     color: #666;
     margin: 0.5rem 0;
 }
@@ -1700,6 +1702,7 @@ h3 .badge-e{
 
 .opinion-column cite {
     font-size: 0.65rem;
+    font-family: "Marcin Ant", Arial, sans-serif;
     color: #666;
     font-style: normal;
 }
