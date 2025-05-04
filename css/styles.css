@@ -2085,7 +2085,7 @@ h3 .badge-e{
     grid-template-columns: 2fr 1fr 1fr;
     gap: 2rem;
     align-items: start;
-    margin-bottom: -3rem;
+    margin-bottom: -1rem;
 }
 .cultura-column{
     border-right: 1px solid #ccc;
