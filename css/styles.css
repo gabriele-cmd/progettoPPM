@@ -543,13 +543,11 @@ a:hover, .headline h2:hover, .headline h3:hover {
 
 .headline h2 {
     font-size: 1.4rem;
-    font-weight: bold;
     transition: opacity 0.4s;
     margin-bottom: 0.4rem;
 }
 .headline h3 {
     font-size: 0.865rem;
-    font-weight: bold;
     transition: opacity 0.4s;
     padding-top: 0.7rem;
 }
@@ -567,7 +565,6 @@ a:hover, .headline h2:hover, .headline h3:hover {
 
 .center-column > .headline:first-child h2 {
     font-size: 1.7rem;
-    font-weight: bold;
     transition: opacity 0.4s;
 }
 .center-column > .headline:first-child p {
@@ -766,7 +763,6 @@ h3 .badge-e{
     .center-column > .headline:first-child h3{
         order: 5;
         font-size: 0.865rem;
-        font-weight: bold;
         margin: 0.5rem 0;
         text-align: left;
     }
@@ -905,7 +901,6 @@ h3 .badge-e{
 
 .section-title h2 {
     font-size: 2rem;
-    font-weight: bold;
     margin: 0;
 }
 
@@ -967,7 +962,6 @@ h3 .badge-e{
 
 .article-text h2 {
     font-size: 2rem;
-    font-weight: bold;
     margin: 0.2rem 0;
     font-family: "PT Serif Caption", serif;
     transition: opacity 0.4s;
@@ -975,7 +969,6 @@ h3 .badge-e{
 
 .article-text h3 {
     font-size: 0.865rem;
-    font-weight: bold;
     transition: opacity 0.4s;
 }
 
@@ -1127,7 +1120,6 @@ h3 .badge-e{
 
 .mini-headline h2 {
     font-size: 1rem;
-    font-weight: bold;
     transition: opacity 0.4s;
     margin-bottom: 0.4rem;
 }
@@ -1284,7 +1276,6 @@ h3 .badge-e{
 }
 
 .mas-visto_list li {
-    font-weight: bold;
     font-size: 0.9rem;
     margin-bottom: 1rem;
     position: relative;
@@ -1668,7 +1659,6 @@ h3 .badge-e{
 
 .opinion-editorial h3 {
     font-size: 1.3rem;
-    font-weight: bold;
     margin-bottom: 0.5rem;
     transition: opacity 0.4s;
 }
@@ -1691,7 +1681,6 @@ h3 .badge-e{
 
 .opinion-column h3 {
     font-size: 1.1rem;
-    font-weight: bold;
     transition: opacity 0.4s;
 }
 
@@ -1844,7 +1833,6 @@ h3 .badge-e{
 .featured-text h2 {
     font-size: 2rem;
     margin: 0 0 0.5rem 0;
-    font-weight: bold;
 }
 
 .featured-text cite{
@@ -1888,7 +1876,6 @@ h3 .badge-e{
 .small-article h3 {
     font-size: 1rem;
     margin: 0.5rem 0 0.2rem;
-    font-weight: bold;
 }
 
 .small-article cite{
@@ -1904,21 +1891,19 @@ h3 .badge-e{
     object-fit: cover;
 }
 
-.deportes-featured h1{
+.deportes-featured h2{
     font-size: 2rem;
-    font-weight: bold;
     margin: 0.2rem 0;
     font-family: "PT Serif Caption", serif;
     transition: opacity 0.4s;
 }
 .deportes-featured h3{
     font-size: 0.865rem;
-    font-weight: bold;
     transition: opacity 0.4s;
     padding-top: 0.7rem;
 }
 .deportes-featured h3:hover,
-.deportes-featured h1:hover{
+.deportes-featured .featured-text h2:hover{
     opacity: 0.8;
     cursor: pointer;
 }
@@ -2125,7 +2110,6 @@ h3 .badge-e{
 
 .cultura-main-text h2 {
     font-size: 1.9rem;
-    font-weight: bold;
     margin: 0.5rem 0 0;
     transition: opacity 0.4s;
 }
@@ -2156,7 +2140,6 @@ h3 .badge-e{
 
 .cultura-article h3 {
     font-size: 1.2rem;
-    font-weight: bold;
     margin: 0.3rem 0 0;
     transition: opacity 0.4s;
 }
@@ -2347,7 +2330,6 @@ h3 .badge-e{
 
 .semana-article-text h3 {
     font-size: 1.1rem;
-    font-weight: bold;
     margin-bottom: 0.3rem;
     transition: opacity 0.4s;
 }
@@ -2569,7 +2551,6 @@ figure.newspaper-image:hover {
 
 .section-title.center-title h2 {
     font-size: 0.85rem;
-    font-weight: bold;
     display: inline-block;
     margin: 0;
 }
