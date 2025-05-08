@@ -993,7 +993,7 @@ h3 .badge-e{
     cursor: pointer;
 }
 
-.article-text h1:hover,
+.article-text h2:hover,
 .article-text h3:hover{
     opacity: 0.8;
     cursor: pointer;
